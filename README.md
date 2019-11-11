@@ -3,3 +3,4 @@ Fast sudoku solver. Tkinter frontend. Run front.py
 
 
 ![alt text](https://raw.githubusercontent.com/LohnesskoeChudo/sudoku_solver/master/sudokuimg.png)
+![alt text](https://raw.githubusercontent.com/LohnesskoeChudo/sudoku_solver/master/sudokuimg2.png)
