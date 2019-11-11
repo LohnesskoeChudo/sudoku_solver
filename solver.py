@@ -11,6 +11,7 @@ class SudokuSolver:
 		self.init_sudoku = sudoku
 		self.sudoku_complete = False
 		self.finished_sudoku = None
+		self.sudoku_is_correct = True
 		self.pool = {k + 1 for k in range(9)}
 
 	def __repr__(self):
@@ -39,7 +40,8 @@ class SudokuSolver:
 			except SudokuSolver.EntryError:
 				pass
 		else:
-			print('Sudoku incorrect!')
+			self.sudoku_is_correct = False
+			#print('Sudoku incorrect!')
 
 	def _solve_sudoku(self, sudoku, delay=3):
 		'''
