@@ -12,7 +12,7 @@ class SudokuSolver:
 		self.sudoku_complete = False
 		self.finished_sudoku = None
 		self.sudoku_is_correct = True
-		self.pool = {k + 1 for k in range(9)}
+		self.pool = set(range(1,10))
 
 	def __repr__(self):
 		sud = self.finished_sudoku
